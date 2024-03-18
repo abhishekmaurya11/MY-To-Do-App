@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    height: 100vh;
+}
+
+.cont{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+h2{
+    text-align: center;
+    padding: 6px 60px;
+    border-radius: 50% 50% 0% 0%;
+    background-image: linear-gradient(to right, rgb(151, 46, 155) ,rgb(201, 41, 166),rgb(105, 15, 75));
+}
+.three-things{
+    margin-top: 10px;
+    padding: 6px 20px;
+    background-color: rgb(16, 97, 129);
+
+    border-radius: 7px;
+}
+
+.task-list-box{
+    margin-top: 6px;
+    padding: 10px 30px;
+    background-color: rgb(221, 17, 17);
+
+    border-radius: 8px 45px 8px 45px;
+
+    opacity: 1;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    background-color: rgb(21, 60, 168);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+}
+
+.task-about{
+    /* align-self: flex-start; */
+    width: 232px;
+    padding: 8px;
+    margin-right: 5px;
+
+    background-color: plum;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.task-aboutLineThrough{
+    text-decoration: line-through;
+}
+.tDe-btn{
+    width: 67px;
+    padding-top: 8px;
+
+}
+
+.tick{
+    padding: 1px;
+    margin-bottom: 2px;
+}
+.del{
+    padding: 1px 5px;
+    
+}
+.edit{
+    padding: 1px 1px;
+
+}
+.tick, .del, .edit{
+    /* align-self: flex-end; */
+}
+
+input{
+    width: 500px;
+    padding: 6px 5px;
+}
+input::placeholder {
+    /* color: red;  */
+}
+.custom-placeholder-color::placeholder {
+    color: red;
+}
+
+.add-task{
+    padding: 6px 5px;
+}
+
+.clear-all{
+    padding: 6px 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* edit box/////////////////// */
+
+.edit-box-cont{
+    display: none;
+    position: fixed;
+    top: 30vh;
+    /* left: 60vh; */
+    /* z-index: 1; */
+    z-index: 1;
+    /* transform: translateX(50%) translateY(0vh); */
+
+}
+
+.edit-box{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+
+    border: 1px solid black;
+    background-image: linear-gradient(to right top, red, blue);
+}
+
+textarea{
+    margin: 10px;
+    resize: none;
+    border: none;
+
+    /* border: 0.01px solid black; */
+
+
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 255, 0.521);
+}
